@@ -5,8 +5,6 @@ gem 'rails', '3.0.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-gem 'heroku_san', :path => '../../.'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -27,6 +25,8 @@ gem 'heroku_san', :path => '../../.'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
+group :development, :test do
 #   gem 'webrat'
-# end
+   gem 'sqlite3'
+   gem 'heroku_san', :path => '../../.'
+end

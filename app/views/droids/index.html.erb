@@ -1,0 +1,23 @@
+<h1>Listing droids</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @droids.each do |droid| %>
+  <tr>
+    <td><%= droid.name %></td>
+    <td><%= link_to 'Show', droid %></td>
+    <td><%= link_to 'Edit', edit_droid_path(droid) %></td>
+    <td><%= link_to 'Destroy', droid, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Droid', new_droid_path %>

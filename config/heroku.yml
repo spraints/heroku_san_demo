@@ -1,0 +1,24 @@
+#
+# Format:
+# 
+# <heroku_san shorthand name>:
+#   app: <Heroku app name>
+#   tag: <git tag pattern>
+#   config:
+#     - <Heroku config:var name>: <Heroku config:var value>
+#
+production: 
+  app: heroku-san-demo-production
+  tag: production/*
+  config: &default
+    BUNDLE_WITHOUT: "development:test"
+
+staging:
+  app: heroku-san-demo-staging
+  tag: staging/*
+  config: &default
+    BUNDLE_WITHOUT: "development:test"
+
+demo: 
+  app: heroku-san-demo-demo
+  config: *default

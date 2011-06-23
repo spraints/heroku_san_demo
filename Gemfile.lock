@@ -1,5 +1,5 @@
 PATH
-  remote: ../../.
+  remote: ../../../.
   specs:
     heroku_san (1.2.0)
       heroku

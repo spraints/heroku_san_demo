@@ -30,5 +30,5 @@ gem 'bundler', '1.0.7'
 group :development, :test do
 #   gem 'webrat'
    gem 'sqlite3'
-   gem 'heroku_san', :path => '../../.'
+   gem 'heroku_san', :path => '../../../.'
 end

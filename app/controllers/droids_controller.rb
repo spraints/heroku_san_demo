@@ -7,6 +7,7 @@ class DroidsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @droids }
+      format.text  { render :text => @droids.sort_by(&:name).map(&:name).join(", ") }
     end
   end
 

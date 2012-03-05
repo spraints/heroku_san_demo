@@ -22,3 +22,6 @@ staging:
 demo: 
   app: heroku-san-demo-demo
   config: *default
+  addons:
+  - logging:basic
+  - deployhooks:campfire
